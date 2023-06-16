@@ -1,0 +1,362 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create an account</title>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> </link>-->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+
+    
+    <style>
+        /* .image-upload>input {
+            display: none;
+        }
+
+        .image-upload img {
+            width: 80px;
+            cursor: pointer;
+        } */
+
+        .error {
+            color: #534fdd;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #a8c2ff;
+        }
+
+        .container {
+            margin: 10rem auto;
+            background-color: #f6f6f6f7;
+            padding: 2%;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #7c78f5;
+        }
+
+        h1 {
+            margin-left: 2rem;
+        }
+
+        h1,
+        p {
+            /* text-align: center; */
+            letter-spacing: 3px;
+        }
+
+
+        p {
+            margin: 5px;
+            font-weight: bold;
+            font-size: 16.5px;
+        }
+
+        .inputs_container {
+            margin: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-mod,
+        .text-mod2,
+        #password {
+            margin-bottom: 15px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            border-bottom: 1.5px solid #000;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: #f6f6f6f7;
+            font-size: 16.5px;
+        }
+
+        .text-mod {
+            height: 30px;
+        }
+
+        .btn {
+            width: 100px;
+            height: 37px;
+            /* margin: 30px; */
+            /* margin-top:0.5rem; */
+            /* margin-left: 1rem; */
+            /* float:right; */
+            text-align: center;
+            border-radius: 8px;
+            background-color: #04a5f5;
+            color: #fff;
+            font-weight: 550;
+            box-shadow: 2px 2px 5px #7c78f5;
+            cursor: pointer;
+            border: 1px solid #04a5f5;
+
+        }
+
+        .btn:hover {
+            background-color: #7c78f5;
+            color: #000;
+            transition: 0.5s;
+            font-weight: 550;
+        }
+
+        .text-mod:focus,
+        .text-mod2:focus {
+            background-color: #a8c2ff;
+            outline: none;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+
+        .inputBox,
+        #image {
+            flex: 50%;
+        }
+
+        .inputBox {
+            padding: 1rem 10rem 0rem 5rem;
+        }
+
+        img {
+            border-radius: 1rem;
+        }
+
+        #links {
+            margin-top: 0.6rem;
+            /* float:right; */
+            /* padding-left:-0.4rem; */
+        }
+
+        .item {
+            object-fit: cover;
+            border-radius: 10px;
+            /* width:400px; */
+            border-radius: 15px;
+            height: 100%;
+
+            /* height:100px; */
+
+        }
+
+        #myCarousel {
+            margin-top: -5rem;
+            border-radius: 1rem;
+        }
+
+        .left.carousel-control,
+        .right.carousel-control {
+            border-radius: 15px;
+        }
+
+        #already {
+            padding: 0rem 0rem 0rem 8.1rem;
+        }
+
+        #check {
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="container">
+            <!-- &#9312; -->
+            <h1 style="margin-left: 6%;color: #04a5f5;"><i class="fa-regular fa-user" style="color: #04a5f5;"></i>
+                SIGN UP</h1>
+
+
+            <form name="MyForm" onsubmit="return validate()">
+              <!-- <div name=""MyForm> -->
+
+                <div class="inputs_container">
+                    <div class="inputBox">
+
+                        <span class="error" id="Message">Name *</span> <input type="text" name="name" id="name"
+                            class="text-mod" placeholder="Enter name" onchange="return namevalid()">
+
+                        <span class="error" id="Message2">Email *</span><input type="text" name="email" id="email"
+                            class="text-mod" placeholder="ex: myname@example.com" onchange="return emailvalid()">
+
+                        <!-- Here multiple is for taking multiple emails-->
+
+
+                        <span class="error" id="Message3">Mobile No. *</span><input type="number" name="mobile"
+                            id="mobile" placeholder="+91-xxxxxxxxxx " class="text-mod" onchange="return numberValid()">
+
+                        <!-- <span class="error" id="Message4">Write Your query *</span><textarea placeholder="Compose email"
+                            rows="4" id="textarea_size" class="text-mod2" onchange="return TextareaValid()"></textarea> -->
+
+                        <span class="error" id="Message5">Password *</span><input id="password" type="password" required
+                            placeholder="ex: abcde@12345" />
+
+                        <input type="checkbox" id="check" class="check" required /><span id="terms">I have read and
+                            agreed to the <span style="color: #0088cc;"><a
+                                    href="https://en.wikipedia.org/wiki/Blood_bank">Terms and
+                                    Conditions*</a></span></span>
+                        <br>
+
+                        <span><button onclick="submitData()" class="btn">SignUp</button></span>
+                        <span id="already">Already have an account?<a href="./login.html" id="links"> SignIn</a></span>
+                        <!--Value represent inside submit button what will display-->
+                    </div>
+
+
+                    <div id="image">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox" style="height:300px">
+                                <div class="item active" align="center">
+                                    <img src="IMAGES/Blood-Donation-1-1024x537.jpg" style="width:100%; height:100%;">
+                                    <!--   <div class="carousel-caption" align="center">
+                                    <b>Movie 1</b>
+                                  </div> -->
+                                </div>
+
+                                <div class="item" align="center">
+                                    <img src="IMAGES/wp10938797.jpg" alt="..." style="width:100%;height:100%;">
+                                    <!--  <div class="carousel-caption">
+                                   <b>Movie 2</b>
+                                  </div> -->
+                                </div>
+                                <div class="item" align="center">
+                                    <img src="IMAGES/Blood donation-2.jpg" alt="..." style="width:100%;height:100%; ">
+                                    <!-- <div class="carousel-caption">
+                                  <b>Movie 3</b>
+                                  </div> -->
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </form>
+          </div>
+
+            <script>
+                function namevalid() {
+                    var inp_text4 = document.getElementById("name");
+                    var letters = /^[A-Za-z\ \A-Za-z]+$/;
+                    if (inp_text4.value.trim() == "") {   //  we can write this => if (inp_text4.value == "") {  // trim for avoid space if only space it false but in =="" it is not
+                        document.getElementById("Message").innerHTML = "<b>&#10060; Please provide your name</b>";
+                        document.getElementById("Message").style.color = "#c30101";
+                        return false;
+                    }
+                    if (inp_text4.value.match(letters)) {
+                        document.getElementById("Message").innerHTML = "<b>&#9989; Verified</b>";
+                        document.getElementById("Message").style.color = "#00ff00";
+                        return true;
+                    }
+                    else {
+                        document.getElementById("Message").innerHTML = "<b>&#10060; Invalid input. Name should be alphabets only</b>";
+                        document.getElementById("Message").style.color = "#c30101";
+                        return false;
+                    }
+                }
+                //------------------------Email varification---------------------------
+                function emailvalid() {
+                    var a = document.getElementById('email').value;  //We can do this also
+                    if (a == "") {
+                        document.getElementById("Message2").innerHTML = "**Please enter an email id";
+                        document.getElementById("Message2").style.color = "red";
+                        return false;
+                    }
+                    let atPos = a.indexOf('@');
+                    if (atPos <= 0) {
+                        document.getElementById("Message2").innerHTML = "**Invalid @ position";
+                        document.getElementById("Message2").style.color = "red";
+                        return false;
+                    }
+                    let dotPos = a.lastIndexOf('.');
+                    console.log(dotPos);
+                    console.log(a.length);
+                    if (dotPos <= 0) {
+                        document.getElementById("Message2").innerHTML = "**Invalid email Id, not containing any .(dot) ";
+                        document.getElementById("Message2").style.color = "red";
+                        return false;
+                    }
+                    if (dotPos - atPos < 4 || dotPos == a.length - 1) {
+                        document.getElementById("Message2").innerHTML = "**Invalid .(dot) position";
+                        document.getElementById("Message2").style.color = "red";
+                        return false;
+                    }
+
+                    else {
+                        document.getElementById("Message2").innerHTML = "*Verified";
+                        document.getElementById("Message2").style.color = "green";
+
+                    }
+                }
+             
+
+                function validate() {
+                    //swal('Congrats!', 'Email posted successfully', 'success');
+
+                    if (emailvalid() == false) {
+                        return false;
+                    }
+                    else {
+                        if (namevalid() == false) {
+                            return false;
+                        }
+
+                        else {
+
+                            alert("Congrats!\nUser registered successfully");
+                            //swal('Congrats!', 'Email posted successfully', 'success');
+                            callllllin();
+                        }
+
+
+                    }
+                }
+                // }
+                // }
+                function callllllin() {
+                    swal('Congrats!', 'User registered successfully', 'success');
+                    window.location.href = "login.html";
+                }
+            </script>
+            <script src="JS/register.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>

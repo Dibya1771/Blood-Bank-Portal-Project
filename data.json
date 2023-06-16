@@ -1,0 +1,146 @@
+{
+  "AdminData": [
+    {
+      "Aemail": "admin@blood.com",
+      "Apass": "Admin123"
+    }
+  ],
+  "UserData": [
+    {
+      "id": 1685904568824,
+      "name": "viky",
+      "mobile": "2222222222222",
+      "email": "abc@fgm.com",
+      "password": "222222"
+    },
+    {
+      "id": 1685914372963,
+      "name": "Riki",
+      "mobile": "7890890900",
+      "email": "abc@fgm.com",
+      "password": "5678"
+    },
+    {
+      "id": 1685920410306,
+      "name": "viky",
+      "mobile": "333333333333333",
+      "email": "abc@fgm.com",
+      "password": "33333"
+    },
+    {
+      "id": 1685920477051,
+      "name": "BIKU",
+      "mobile": "2222222222",
+      "email": "rrr@sss.com",
+      "password": "2222"
+    },
+    {
+      "id": 1685920512514,
+      "name": "BIKU",
+      "mobile": "2345678999",
+      "email": "rrr@sss.com",
+      "password": "99999"
+    },
+    {
+      "id": 1685920529546,
+      "name": "BIKU",
+      "mobile": "44",
+      "email": "abc@fgm.com",
+      "password": "44"
+    },
+    {
+      "id": 1685941040905,
+      "name": "ccc",
+      "mobile": "7676767676",
+      "email": "abv@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 1685941115905,
+      "name": "ABC",
+      "mobile": "9870900231",
+      "email": "mrbiku4444@gmail.com",
+      "password": "1111"
+    },
+    {
+      "id": 1685945567398,
+      "name": "Arjya",
+      "mobile": "4890345671",
+      "email": "arjya@gmail.com",
+      "password": "1111"
+    },
+    {
+      "id": 1685946805870,
+      "name": "sn",
+      "mobile": "3567",
+      "email": "abc@fgm.com",
+      "password": "3456677"
+    }
+  ],
+  "DonorsDetails": [
+    {
+      "fname": "Tiku",
+      "mname": "Ku",
+      "lname": "Mishra",
+      "contact": "8974376321",
+      "email": "tiky@gmail.com",
+      "dob": "2001-11-11",
+      "gender": "male",
+      "state": "Bihar",
+      "district": "Katihar",
+      "house": "d",
+      "blood_group": "B+",
+      "disease": "NA",
+      "weight": "52",
+      "id": 1
+    },
+    {
+      "fname": "Biku",
+      "mname": "Ku",
+      "lname": "Gupta",
+      "contact": "8974376321",
+      "email": "biku@gmail.com",
+      "dob": "2001-11-11",
+      "gender": "male",
+      "state": "Bihar",
+      "district": "Katihar",
+      "house": "d",
+      "blood_group": "A+",
+      "disease": "NA",
+      "weight": "52",
+      "id": 2
+    },
+    {
+      "fname": "Chiku",
+      "mname": "Ku",
+      "lname": "Panda",
+      "contact": "8974376321",
+      "email": "chicku@gmail.com",
+      "dob": "2001-11-11",
+      "gender": "male",
+      "state": "Bihar",
+      "district": "Katihar",
+      "house": "d",
+      "blood_group": "B+",
+      "disease": "NA",
+      "weight": "52",
+      "id": 3
+    },
+    {
+      "fname": "Dibya",
+      "mname": "Ranjan",
+      "lname": "Rath",
+      "contact": "7847949378",
+      "email": "dduttajnv@gmail.com",
+      "dob": "2002-02-26",
+      "gender": "male",
+      "state": "Chandigarh",
+      "district": "Chandigarh",
+      "house": "Salepur",
+      "blood_group": "A+",
+      "disease": "Typhoid",
+      "weight": "89",
+      "id": 4
+    }
+  ]
+}

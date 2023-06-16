@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>RED Bank</title>
+</head>
+<body>
+
+  <div class="nav">
+    <div id="brand"><img id="brandimg" src="./IMAGES/logo.png">
+        <span style="color:#060606;margin-left: -10px; font-size: 20px;">Red </span>Bank<div id="tagline" style="font-size: 12px; color: #151515;">Give the Gift of Life</div></div>   
+        <div class="item1">Home</div>
+    <div class="item2" >Pages</div>
+    <div class="item3">About us</div>
+    <div class="item4">Contact</div>
+    <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+</div>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" style="width:74%; height:600px;">
+            <div class="item active" align="center">
+
+                <img src="IMAGES/Blood-Donation-1-1024x537.jpg"
+                    style="width:100%; height:600px; box-shadow: 20px 0px 20px -20px black inset; ">
+                <!--   <div class="carousel-caption" align="center">
+                <b>Movie 1</b>
+              </div> -->
+            </div>
+
+            <div class="item" align="center">
+                <img src="IMAGES/wp10938797.jpg" alt="..." style="width:100%;height:600px;">
+                <!--  <div class="carousel-caption">
+               <b>Movie 2</b>
+              </div> -->
+            </div>
+            <div class="item" align-items="center">
+                <img src="IMAGES/save_Life.webp" alt="..." style="width:100%;height:600px; ">
+                <!-- <div class="carousel-caption">
+              <b>Movie 3</b>
+              </div> -->
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <h4>Be the drop that makes an ocean of difference. Donate blood and save lives</h4>
+    <button class="donate" id="donor_btn">Donate now</button>
+    <div class="flex-box">
+        <div class="img">
+            <img id="img1" src="./IMAGES/grouping.jpg" alt="blood" style="border-radius:1rem;">
+        </div>
+        <div class="table">
+            <table id="details" border="1">
+                <caption>Compatible Blood Type Donors</caption>
+                <tr>
+                    <th>Blood Type</th>
+                    <th>Donate Blood To</th>
+                    <th>Receive Blood From</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>A+</td>
+                        <td>A+, AB+</td>
+                        <td>A+, A-, O+, O-</td>
+                    </tr>
+                    <tr>
+                        <td>O+</td>
+                        <td>O+, A+, B+, AB+</td>
+                        <td>O+, O-</td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td>B+, AB+</td>
+                        <td>B+, B-, O+, O-</td>
+                    </tr>
+                    <tr>
+                        <td>AB+</td>
+                        <td>AB+</td>
+                        <td>Everyone</td>
+                    </tr>
+                    <tr>
+                        <td>A-</td>
+                        <td>A+, A-, AB+, AB-</td>
+                        <td>A-, O-</td>
+                    </tr>
+                    <tr>
+                        <td>O-</td>
+                        <td>Everyone</td>
+                        <td>o-</td>
+                    </tr>
+                    <tr>
+                        <td>B-</td>
+                        <td>B+, B-, AB+, AB-</td>
+                        <td>B-, O-</td>
+                    </tr>
+                    <tr>
+                        <td>AB-</td>
+                        <td>AB+, AB-</td>
+                        <td>AB-, A- ,B- ,O-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="grid">
+        <div class="a1"><p> <span id="question">&#9312; How does blood donation help save lives?</span><br>
+            Blood donations provide a vital supply of blood for transfusions during surgeries, cancer treatments, and emergencies. Donated blood can be a lifeline for patients with various conditions, helping them recover and survive.</p></div>
+        <div class="a2"><p> <span id="question">&#9313; Who benefits from blood donation?</span><br>
+            A wide range of individuals benefit from blood donation, including patients undergoing medical procedures, accident victims, people with chronic illnesses, women during childbirth, and those with blood disorders.</p></div>
+        <div class="a3"><p> <span id="question">&#9314; What medical treatments rely on blood donations?</span><br>
+            Blood donations support treatments such as organ transplants, cardiovascular surgeries, cancer therapies, and procedures for severe burns. These treatments often require blood transfusions to replace blood loss or aid in the recovery process.</p></div>
+        <div class="a4"><p> <span id="question">&#9315; How often can I donate blood?</span><br>
+            Donation frequency varies, but in many cases, individuals can donate whole blood every 8 to 12 weeks (approximately every 2 to 3 months). Specific guidelines may vary, so it's best to consult your local blood donation center for precise information.</p></div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="foot"> © Created by The 5 Strivers</div>
+            <div class="row1">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                REDBANK Copyright © 2023 RedBank - All rights reserved
+            </div>
+        </div>
+    </footer>
+   </body>
+<script src="JS/home.js"></script>
+</html>
+
+<!-- npm init -y    :   to create package.json
+npm i json-server   :   to run debugger -->

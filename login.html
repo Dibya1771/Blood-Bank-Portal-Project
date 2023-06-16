@@ -1,0 +1,66 @@
+    <html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="./CSS/login.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+
+    </head>
+
+    <body>
+
+        <div class="hero">
+            <div class="form-box">
+                <h3>Sign <span style="font-size:26px;color:red">In</span></h3>
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">User</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Admin</button>
+                </div>
+
+                <!-- <form id="login" class="input-group"> -->
+                    <div id="login" class="input-group">
+                      <span class="error" id="Message2">Email *</span>
+                      <input type="text" class="input-field" placeholder="myname@example.com" id="email" required>
+                      <span class="error" id="Message5">Password *</span>
+                      <input type="password" class="input-field" placeholder="eg- Abbc@12345." id="password">
+                      <input type="checkbox" class="check-box"><span id="check-box">Remember Password</span>
+                      <span id="already" style="margin-left:-0.8rem; margin-top:-1rem">Create a new account?<a href="./Register.html" id="links"> SignUp</a></span>
+                      <button onclick="findUser();" class="submit-btn">Sign In</button>
+                    </div>
+                  <!-- </form> -->
+                  <!-- <form id="register" class="input-group"> -->
+                    <div id="register" class="input-group">
+                      <span class="error" id="Message2">Username *</span>
+                      <input type="text" class="input-field" value="admin@blood.com" id="Aemail" readonly>
+                      <span class="error" id="Message5">Password *</span>
+                      <input type="password" class="input-field" placeholder="eg- Abbc@12345." id="Apass" autocomplete="off">
+                      <!-- <input type="checkbox" class="chech-box"><span>I agree to the terms and conditions</span> -->
+                      <button onclick="findAdmin();" class="submit-btn">Sign In</button>
+                  <!-- </form>            -->
+                  <div>
+                 </div>
+        </div>
+         <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            function register() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+        <script src="./JS/login.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+         -->
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+
+    </body>
+
+    </html>

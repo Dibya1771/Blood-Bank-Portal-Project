@@ -1,0 +1,187 @@
+span {
+    color: #c30101;
+    font-size: 16.5px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    /* background: linear-gradient(to bottom right, #d5d6e0, #7c78f5, #268fff, #7c78f5, #7c78f5, #268fff, #7c78f5, #d5d6e0, #7c78f5); */
+
+    background-color:#8caefd;
+}
+
+h2 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#MyForm {
+    padding: 70px;
+}
+
+.box {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 12px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.box2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+    width: 33.1%;
+}
+
+.box3 {
+    padding: 12px;
+    width: 100%;
+}
+
+.box4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+    width: 4.5%;
+}
+
+.box5 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+    width: 95.5%;
+}
+
+.box6 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+    width: 70%;
+}
+
+.box,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #dbddff;
+    box-shadow: 2px 8.5px 5px #23263888;
+    backdrop-filter: blur(7px);
+}
+
+table {
+    background-color: #8d8ae9;
+    box-shadow: 2px 8.5px 5px #23263888;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    /* outline: solid black; */
+    outline: none;
+    table-layout: 50px;
+}
+
+table,
+th,
+tr,
+td {
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.btn,
+.btn2 {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    width: 8%;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 7px 8px #23263888;
+    letter-spacing: 0.1em;
+}
+
+.btn {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.btn2 {
+    background-color: #ff0945;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.btn:hover,
+.btn2:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #dbddff;
+    transition: 0.5s;
+}
+
+#agree {
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=date]:focus,
+input[type=number]:focus {
+    background-color: #a8c2ff;
+    outline: solid #7c78f5;
+    transition: 0.5s;
+}
+
+option:not(:checked) {
+    cursor: pointer;
+    background-color: #a8c2ff;
+    color: #000;
+
+}
+
+.nav-bg {
+    background: rgba(27, 29, 61, 0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.add-merge {
+    display: flex;
+}
+
+.add1 {
+    width: 50%;
+}
+
+.add2 {
+    width: 50%;
+}
