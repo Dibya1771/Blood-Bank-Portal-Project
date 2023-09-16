@@ -17,165 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
-
-    
-    <style>
-        /* .image-upload>input {
-            display: none;
-        }
-
-        .image-upload img {
-            width: 80px;
-            cursor: pointer;
-        } */
-
-        .error {
-            color: #534fdd;
-        }
-
-        body {
-            align-items: center;
-            justify-content: center;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            background-color: #a8c2ff;
-        }
-
-        .container {
-            margin: 10rem auto;
-            background-color: #f6f6f6f7;
-            padding: 2%;
-            align-self: center;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px #7c78f5;
-        }
-
-        h1 {
-            margin-left: 2rem;
-        }
-
-        h1,
-        p {
-            /* text-align: center; */
-            letter-spacing: 3px;
-        }
-
-
-        p {
-            margin: 5px;
-            font-weight: bold;
-            font-size: 16.5px;
-        }
-
-        .inputs_container {
-            margin: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .text-mod,
-        .text-mod2,
-        #password {
-            margin-bottom: 15px;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-
-            border-bottom: 1.5px solid #000;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            background-color: #f6f6f6f7;
-            font-size: 16.5px;
-        }
-
-        .text-mod {
-            height: 30px;
-        }
-
-        .btn {
-            width: 100px;
-            height: 37px;
-            /* margin: 30px; */
-            /* margin-top:0.5rem; */
-            /* margin-left: 1rem; */
-            /* float:right; */
-            text-align: center;
-            border-radius: 8px;
-            background-color: #04a5f5;
-            color: #fff;
-            font-weight: 550;
-            box-shadow: 2px 2px 5px #7c78f5;
-            cursor: pointer;
-            border: 1px solid #04a5f5;
-
-        }
-
-        .btn:hover {
-            background-color: #7c78f5;
-            color: #000;
-            transition: 0.5s;
-            font-weight: 550;
-        }
-
-        .text-mod:focus,
-        .text-mod2:focus {
-            background-color: #a8c2ff;
-            outline: none;
-            transition: 0.5s;
-            border-radius: 5px;
-        }
-
-        .inputBox,
-        #image {
-            flex: 50%;
-        }
-
-        .inputBox {
-            padding: 1rem 10rem 0rem 5rem;
-        }
-
-        img {
-            border-radius: 1rem;
-        }
-
-        #links {
-            margin-top: 0.6rem;
-            /* float:right; */
-            /* padding-left:-0.4rem; */
-        }
-
-        .item {
-            object-fit: cover;
-            border-radius: 10px;
-            /* width:400px; */
-            border-radius: 15px;
-            height: 100%;
-
-            /* height:100px; */
-
-        }
-
-        #myCarousel {
-            margin-top: -5rem;
-            border-radius: 1rem;
-        }
-
-        .left.carousel-control,
-        .right.carousel-control {
-            border-radius: 15px;
-        }
-
-        #already {
-            padding: 0rem 0rem 0rem 8.1rem;
-        }
-
-        #check {
-            margin-bottom: 3rem;
-        }
-    </style>
+<link rel="stylesheet" href="./CSS/Register.css">
 </head>
 
 <body>
@@ -183,9 +25,8 @@
     <div>
         <div class="container">
             <!-- &#9312; -->
-            <h1 style="margin-left: 6%;color: #04a5f5;"><i class="fa-regular fa-user" style="color: #04a5f5;"></i>
+            <h1 style="margin-left: 6%;color: #5b0e1d;"><i class="fa-regular fa-user" style="color: #5b0e1d;"></i>
                 SIGN UP</h1>
-
 
             <form name="MyForm" onsubmit="return validate()">
               <!-- <div name=""MyForm> -->
@@ -212,9 +53,9 @@
                             placeholder="ex: abcde@12345" />
 
                         <input type="checkbox" id="check" class="check" required /><span id="terms">I have read and
-                            agreed to the <span style="color: #0088cc;"><a
+                            agreed to the </span><span ><a style="color: #cb0f34"
                                     href="https://en.wikipedia.org/wiki/Blood_bank">Terms and
-                                    Conditions*</a></span></span>
+                                    Conditions*</a></span>
                         <br>
 
                         <span><button onclick="submitData()" class="btn">SignUp</button></span>
@@ -230,29 +71,39 @@
                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1"></li>
                                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                <li data-target="#myCarousel" data-slide-to="5"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox" style="height:300px">
                                 <div class="item active" align="center">
                                     <img src="IMAGES/Blood-Donation-1-1024x537.jpg" style="width:100%; height:100%;">
-                                    <!--   <div class="carousel-caption" align="center">
-                                    <b>Movie 1</b>
-                                  </div> -->
+
                                 </div>
 
                                 <div class="item" align="center">
-                                    <img src="IMAGES/wp10938797.jpg" alt="..." style="width:100%;height:100%;">
-                                    <!--  <div class="carousel-caption">
-                                   <b>Movie 2</b>
-                                  </div> -->
+                                    <img src="IMAGES/banner_1.jpg" alt="..." style="width:100%;height:100%;">
+                                    
                                 </div>
                                 <div class="item" align="center">
-                                    <img src="IMAGES/Blood donation-2.jpg" alt="..." style="width:100%;height:100%; ">
-                                    <!-- <div class="carousel-caption">
-                                  <b>Movie 3</b>
-                                  </div> -->
+                                    <img src="IMAGES/banner_2.jpg" alt="..." style="width:100%;height:100%;">
+                                   
                                 </div>
+                                <div class="item" align="center">
+                                    <img src="IMAGES/banner_3.jpg" alt="..." style="width:100%;height:100%;">
+                                   
+                                </div>
+                                <div class="item" align="center">
+                                    <img src="IMAGES/banner_4.jpg" alt="..." style="width:100%;height:100%;">
+                                   
+                                </div>
+                                <div class="item" align="center">
+                                    <img src="IMAGES/banner_5.jpg" alt="..." style="width:100%;height:100%;">
+                                   
+                                </div>
+                                
                             </div>
 
                             <!-- Left and right controls -->
@@ -294,33 +145,33 @@
                 function emailvalid() {
                     var a = document.getElementById('email').value;  //We can do this also
                     if (a == "") {
-                        document.getElementById("Message2").innerHTML = "**Please enter an email id";
-                        document.getElementById("Message2").style.color = "red";
+                        document.getElementById("Message2").innerHTML = "<b>&#10060; Please enter an email id</b>";
+                        document.getElementById("Message2").style.color = "#c30101";
                         return false;
                     }
                     let atPos = a.indexOf('@');
                     if (atPos <= 0) {
-                        document.getElementById("Message2").innerHTML = "**Invalid @ position";
-                        document.getElementById("Message2").style.color = "red";
+                        document.getElementById("Message2").innerHTML = "<b>&#10060; Invalid @ position</b>";
+                        document.getElementById("Message2").style.color = "#c30101";
                         return false;
                     }
                     let dotPos = a.lastIndexOf('.');
                     console.log(dotPos);
                     console.log(a.length);
                     if (dotPos <= 0) {
-                        document.getElementById("Message2").innerHTML = "**Invalid email Id, not containing any .(dot) ";
-                        document.getElementById("Message2").style.color = "red";
+                        document.getElementById("Message2").innerHTML = "<b>&#10060; Invalid email Id, not containing any .(dot)</b> ";
+                        document.getElementById("Message2").style.color = "#c30101";
                         return false;
                     }
                     if (dotPos - atPos < 4 || dotPos == a.length - 1) {
-                        document.getElementById("Message2").innerHTML = "**Invalid .(dot) position";
-                        document.getElementById("Message2").style.color = "red";
+                        document.getElementById("Message2").innerHTML = "<b>&#10060; Invalid .(dot) position</b>";
+                        document.getElementById("Message2").style.color = "#c30101";
                         return false;
                     }
 
                     else {
-                        document.getElementById("Message2").innerHTML = "*Verified";
-                        document.getElementById("Message2").style.color = "green";
+                        document.getElementById("Message2").innerHTML = "<b>&#9989; Verified</b>";
+                        document.getElementById("Message2").style.color = "00ff00";
 
                     }
                 }

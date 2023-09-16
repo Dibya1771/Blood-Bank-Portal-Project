@@ -10,23 +10,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
 </head>
 <body>
+    <button id="logout-btn">Logout</button>
   <form id="MyForm" onsubmit="return formValidation()">
     <!-- <div id="MyForm"> -->
     <h1 style="text-align: center; margin-bottom: 20px;"><span style="color:#fb1c27;font-weight: 600;font-size: 40px;">&#129656;Blood </span>Donation Form</h1>
 
-    <hr style="color: #ffffff;">
-    <hr style="color: #ffffff; margin-top: 4px;">
+    <hr style="color: #ffffff2f;">
+    <hr style="color: #ffffff48; margin-top: 4px;">
     <h2><u>Donor's Details</u><span> *</span></h2>
 
     <label for="fname">Name:</label><span id="Message1"> *</span>
     <br>
+    <div id="name-div">
     <input type="text" name="" id="fname" class="box2" placeholder="First Name" onchange="return Alphabet()">
     <input type="text" name="" id="mname" class="box2" placeholder="Middle Name (Optional)"
         onchange="return Alphabet()">
-    <input type="text" name="" id="lname" class="box2" placeholder="Last Name" onchange="return Alphabet()"><br>
+    <input type="text" name="" id="lname" class="box2" placeholder="Last Name" onchange="return Alphabet()">
+</div><br>
     <label for="contact">Contact Number:</label><span id="Message4"> *</span><br>
-    <input type="text" value="+91" class="box4" readonly style="background-color: #dbddff;outline:none;"><input
-        type="text" name="" id="contact" class="box5" placeholder="xxxxxxxxxx" onchange="return mob_validate()"><br>
+    <div id="mod-inp">
+    <input type="text" value="+91" class="box4" readonly style=" background-color: #f6f6f688;;outline:none;"><input
+        type="text" name="" id="contact" class="box5" placeholder="xxxxxxxxxx" onchange="return mob_validate()">
+    </div><br>
 
     <label for="text">Email:</label><span id="Message5"> *</span><br>
     <input type="text" class="box" id="email" placeholder="ex: myname@example.com"
@@ -128,6 +133,7 @@
 
 <script src="./JS/DonationForm.js"></script>
 <script src="./JS/FormValidation.js"></script>
+<script src="./JS/logout.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
  

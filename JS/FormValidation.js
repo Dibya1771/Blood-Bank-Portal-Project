@@ -1,12 +1,12 @@
- //Check valid name or not
- function Alphabet() {
+//Check valid name or not
+function Alphabet() {
     var inp_text1 = document.getElementById("fname");
     var inp_text2 = document.getElementById("mname");
     var inp_text3 = document.getElementById("lname");
-    var letters = /^[A-Za-z]+$/;    
+    var letters = /^[A-Za-z]+$/;
     if (inp_text1.value == "" || inp_text3.value == "") {
         document.getElementById("Message1").innerHTML = "<b>&#10060; Please provide a name</b>";
-        document.getElementById("Message1").style.color = "#c30101";
+        document.getElementById("Message1").style.color = "#f92f60";
         return false;
     }
     if (inp_text1.value.match(letters) && (inp_text2.value.match(letters) || inp_text2.value == "") && inp_text3.value.match(letters)) {
@@ -18,17 +18,17 @@
 
         //alert("Enter alphabet");
         document.getElementById("Message1").innerHTML = "<b>&#10060; All Name field should be alphabets only</b>";
-        document.getElementById("Message1").style.color = "#c30101";
+        document.getElementById("Message1").style.color = "#f92f60";
         return false;
     }
 }
 
-  //--------------------------------------Mobile no-----------------------------------
-  function mob_validate() {
+//--------------------------------------Mobile no-----------------------------------
+function mob_validate() {
     var mob = document.getElementById('contact').value;
     if (mob == "" || isNaN(mob) || mob.length != 10) {
         document.getElementById("Message4").innerHTML = "<b>&#10060; Invalid mobile number. Please enter 10 digit valid mobile number</b>";
-        document.getElementById("Message4").style.color = "#c30101";
+        document.getElementById("Message4").style.color = "#f92f60";
         return false;
     }
     else {
@@ -44,13 +44,13 @@ function emailvalid() {
     var a = document.getElementById('email').value;
     if (a == "") {
         document.getElementById("Message5").innerHTML = "<b>&#10060; Please enter an email id</b>";
-        document.getElementById("Message5").style.color = "#c30101";
+        document.getElementById("Message5").style.color = "#f92f60";
         return false;
     }
     let atPos = a.indexOf('@');
     if (atPos <= 0) {
         document.getElementById("Message5").innerHTML = "<b>&#10060; Invalid @ position</b>";
-        document.getElementById("Message5").style.color = "#c30101";
+        document.getElementById("Message5").style.color = "#f92f60";
         return false;
     }
     let dotPos = a.lastIndexOf('.');
@@ -58,14 +58,15 @@ function emailvalid() {
     console.log(a.length);
     if (dotPos <= 0) {
         document.getElementById("Message5").innerHTML = "<b>&#10060; Invalid email Id, not containing any .(dot) </b>";
-        document.getElementById("Message5").style.color = "#c30101";
+        document.getElementById("Message5").style.color = "#f92f60";
         return false;
     }
-    if (dotPos - atPos < 4 || dotPos == a.length - 1) {    document.getElementById("Message5").innerHTML = "<b>&#10060; Invalid .(dot) position</b>";
-        document.getElementById("Message5").style.color = "#c30101";
+    if (dotPos - atPos < 4 || dotPos == a.length - 1) {
+        document.getElementById("Message5").innerHTML = "<b>&#10060; Invalid .(dot) position</b>";
+        document.getElementById("Message5").style.color = "#f92f60";
         return false;
     }
-    
+
     else {
         document.getElementById("Message5").innerHTML = "<b>&#9989; Verified</b>";
         document.getElementById("Message5").style.color = "#00ff00";
@@ -100,7 +101,7 @@ function age_Validator() {
             return true;
         }
         else {
-            document.getElementById("Message6").style.color = "#c30101";
+            document.getElementById("Message6").style.color = "#f92f60";
             document.getElementById("Message6").innerHTML = "<br><b>&#10060; You are not eligible to donate blood (Age must be between 18 to 65 years)</b>";
             return false;
         }
@@ -179,10 +180,10 @@ function checkDeclare() {
 }
 
 //-------------------------- Weight --------------------
-function  Weight_Validator(){
+function Weight_Validator() {
     var weight = document.getElementById("weight").value;
-    if(weight==""){
-        document.getElementById("Message20").style.color = "#c30101";
+    if (weight == "") {
+        document.getElementById("Message20").style.color = "#f92f60";
         document.getElementById("Message20").innerHTML = "<br><b>&#10060; Please provide Your weight";
         return false;
     }
@@ -190,33 +191,33 @@ function  Weight_Validator(){
         document.getElementById("Message20").style.color = "#6cff6c";
         document.getElementById("Message20").textContent = " You can donate 350-400ml";
         return true;
-      }
-      else if (weight > 60 && weight <= 70) {
+    }
+    else if (weight > 60 && weight <= 70) {
         document.getElementById("Message20").style.color = "#6cff6c";
         document.getElementById("Message20").textContent = " You can donate 400-500ml";
-      }
-      else if (weight > 70 && weight <= 80) {
+    }
+    else if (weight > 70 && weight <= 80) {
         document.getElementById("Message20").style.color = "#6cff6c";
         document.getElementById("Message20").textContent = " You can donate 500-550ml blood";
-      }
-      else if (weight > 80 && weight <= 90) {
+    }
+    else if (weight > 80 && weight <= 90) {
         document.getElementById("Message20").style.color = "#6cff6c";
         document.getElementById("Message20").textContent = " You can donate 550-600ml blood";
-      }
-      else if (weight > 90 && weight <= 100) {
+    }
+    else if (weight > 90 && weight <= 100) {
         document.getElementById("Message20").style.color = "#6cff6c";
         document.getElementById("Message20").textContent = " You can donate 550-600ml blood";
-      }
-      else if (weight > 100) {
+    }
+    else if (weight > 100) {
         document.getElementById("Message20").textContent = " You can donate above  600ml blood";
-      }
+    }
     else {
-        document.getElementById("Message20").style.color = "#c30101";
+        document.getElementById("Message20").style.color = "#f92f60";
         document.getElementById("Message20").innerHTML = "<br><b>&#10060; You are not eligible to donate blood (weight atleast 50kg)</b>";
         return false;
     }
 }
-  // Validate the entire form
+// Validate the entire form
 //   function formValidation() {
 
 //   }
